@@ -3,7 +3,7 @@ kind: VirtualServer
 metadata:
   name: juice-shop
 spec:
-  host: app-20-232-62-166.nip.io
+  host: app-20-120-43-18.nip.io
   tls:
     secret: juice-shop-secret
   policies:
