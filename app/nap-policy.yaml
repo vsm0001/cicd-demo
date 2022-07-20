@@ -9,4 +9,4 @@ spec:
     securityLog:
       enable: true
       apLogConf: "nap-logging"
-      logDest: "syslog:server=elk-svc.CHANGE_THIS_TO_YOUR_PREFIX:5144"
+      logDest: "syslog:server=elk-svc.vini:5144"

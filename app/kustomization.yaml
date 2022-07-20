@@ -10,4 +10,4 @@ resources:
 - nap-policy.yaml
 - nap-vs.yaml
 - elk-stack.yaml
-namespace: CHANGE_THIS_TO_YOUR_PREFIX
+namespace: vini

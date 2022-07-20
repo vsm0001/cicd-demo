@@ -3,10 +3,10 @@ kind: VirtualServer
 metadata:
   name: juice-shop
 spec:
-  host: CHANGE_THIS_TO_YOUR_NGINX_SERVICE_URL
+  host: app-20-232-62-166.nip.io
   tls:
     secret: juice-shop-secret
-  ingressClassName: CHANGE_THIS_TO_YOUR_PREFIX-nginx-ingress  
+  ingressClassName: vini-nginx-ingress  
   upstreams:
   - name: juice-shop
     service: juice-shop-svc

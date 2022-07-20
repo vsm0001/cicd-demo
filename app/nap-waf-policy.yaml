@@ -126,8 +126,8 @@ spec:
       maskData: true
       usSocialSecurityNumbers: true
     responsePageReference:
-      link: "https://raw.githubusercontent.com/CHANGE_THIS_TO_YOUR_REPO/cicd-demo/main/app/nap-response-page.json"
+      link: "https://raw.githubusercontent.com/vini/cicd-demo/main/app/nap-response-page.json"
     whitelistIpReference:
-      link: "https://raw.githubusercontent.com/CHANGE_THIS_TO_YOUR_REPO/cicd-demo/main/app/nap-ip-allowlist.json"
+      link: "https://raw.githubusercontent.com/vini/cicd-demo/main/app/nap-ip-allowlist.json"
     enforcementMode: blocking
     name: nap-waf-policy
