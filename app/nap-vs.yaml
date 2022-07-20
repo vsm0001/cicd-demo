@@ -6,6 +6,8 @@ spec:
   host: app-20-232-62-166.nip.io
   tls:
     secret: juice-shop-secret
+  policies:
+  - name: nap-policy
   ingressClassName: vini-nginx-ingress  
   upstreams:
   - name: juice-shop
