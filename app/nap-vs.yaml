@@ -20,5 +20,18 @@ spec:
         upstream: juice-shop
         requestHeaders:
           pass: true
+        responseHeaders:
+  hide:
+    - Access-Control-Allow-Origin
+    - Feature-Policy
+  add:
+    - name: Access-Control-Allow-Credentials
+      value: "true"
+    - name: Access-Control-Allow-Origin
+      value: CHANGE_THIS_TO_YOUR_NGINX_SERVICE_URL
+    - name: Content-Security-Policy
+      value: default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com
+    - name: Permissions-Policy
+      value: payment 'self'
 
 

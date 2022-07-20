@@ -17,16 +17,30 @@ spec:
     signatures:
     - enabled: false
       signatureId: 200020010
+    methods:
+    - name: TRACK
+    $action: delete
+    - name: TRACE
+    $action: delete
+    - name: OPTIONS
+    $action: delete
+    bot-defense:
+    settings:
+    isEnabled: true
     blocking-settings:
       violations:
       - description: Illegal file type
         name: VIOL_FILETYPE
+        block: true
       - description: Illegal method
         name: VIOL_METHOD
+        block: true
       - description: Illegal meta character in URL
         name: VIOL_URL_METACHAR
+        block: true
       - description: HTTP protocol compliance failed
         name: VIOL_HTTP_PROTOCOL
+        block: true
       - description: Threat Campaigns
         name: VIOL_THREAT_CAMPAIGN
       - description: Illegal meta character in value
